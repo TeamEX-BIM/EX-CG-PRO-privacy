@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ex CG Manager Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-raised: #fbfbfd;
+    --ink: #1b2330;
+    --ink-muted: #5a6272;
+    --ink-faint: #8991a1;
+    --border: #e1e4ea;
+    --border-strong: #cdd2db;
+    --accent: #2f5fed;
+    --accent-ink: #1d3fb8;
+    --accent-wash: #eaf0ff;
+    --ok: #1c8a5f;
+    --ok-wash: #e7f6ef;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --display: "Space Grotesk", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+    --body-font: "IBM Plex Sans", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+    --shadow-card: 0 1px 2px rgba(27,35,48,0.04), 0 8px 24px -12px rgba(27,35,48,0.10);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151b;
+      --surface: #191d25;
+      --surface-raised: #1f2430;
+      --ink: #e8eaf0;
+      --ink-muted: #a7aebc;
+      --ink-faint: #6d7484;
+      --border: #2a2f3a;
+      --border-strong: #3a4150;
+      --accent: #7096ff;
+      --accent-ink: #a9c0ff;
+      --accent-wash: #1c2740;
+      --ok: #4fbf8f;
+      --ok-wash: #16261f;
+      --shadow-card: 0 1px 2px rgba(0,0,0,0.25), 0 8px 24px -12px rgba(0,0,0,0.45);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #12151b;
+    --surface: #191d25;
+    --surface-raised: #1f2430;
+    --ink: #e8eaf0;
+    --ink-muted: #a7aebc;
+    --ink-faint: #6d7484;
+    --border: #2a2f3a;
+    --border-strong: #3a4150;
+    --accent: #7096ff;
+    --accent-ink: #a9c0ff;
+    --accent-wash: #1c2740;
+    --ok: #4fbf8f;
+    --ok-wash: #16261f;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.25), 0 8px 24px -12px rgba(0,0,0,0.45);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body-font);
+    line-height: 1.6;
+  }
+
+  img { max-width: 100%; }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow .mark {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 12px;
+    flex: none;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(28px, 4.6vw, 38px);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 10px;
+    color: var(--ink);
+  }
+
+  .subhead {
+    color: var(--ink-muted);
+    font-size: 16px;
+    max-width: 54ch;
+    margin: 0 0 28px;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 36px;
+  }
+
+  .meta-row span b {
+    color: var(--ink-muted);
+    font-weight: 500;
+  }
+
+  .lede {
+    font-size: 17px;
+    color: var(--ink);
+    max-width: 62ch;
+    margin: 0 0 32px;
+  }
+
+  /* --- at-a-glance table --- */
+  .glance {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    margin: 0 0 48px;
+  }
+
+  .glance-head {
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .glance-head .label {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .glance-head h2 {
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 600;
+    margin: 4px 0 0;
+  }
+
+  .glance-rows { display: flex; flex-direction: column; }
+
+  .glance-row {
+    display: grid;
+    grid-template-columns: minmax(0,1.35fr) auto minmax(0,1.65fr);
+    gap: 16px;
+    align-items: center;
+    padding: 15px 22px;
+    border-top: 1px solid var(--border);
+  }
+
+  .glance-row:first-child { border-top: none; }
+
+  .glance-row .what {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px 4px 8px;
+    border-radius: 999px;
+    background: var(--ok-wash);
+    color: var(--ok);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .pill::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ok);
+    flex: none;
+  }
+
+  .glance-row .where {
+    font-size: 13.5px;
+    color: var(--ink-muted);
+  }
+
+  .glance-row .where code {
+    font-family: var(--mono);
+    font-size: 12px;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 5px;
+    color: var(--ink-muted);
+  }
+
+  /* --- sections --- */
+  section.doc-section {
+    margin: 0 0 40px;
+  }
+
+  .sec-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent-ink);
+    letter-spacing: 0.02em;
+  }
+
+  h2.sec-title {
+    font-family: var(--display);
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 4px 0 14px;
+    text-wrap: balance;
+  }
+
+  .doc-section p {
+    margin: 0 0 14px;
+    max-width: 66ch;
+    color: var(--ink);
+  }
+
+  .doc-section p.muted { color: var(--ink-muted); }
+
+  .doc-section ul {
+    margin: 0 0 14px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .doc-section li {
+    position: relative;
+    padding-left: 22px;
+    max-width: 64ch;
+  }
+
+  .doc-section li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  code, .inline-code {
+    font-family: var(--mono);
+    font-size: 0.92em;
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 5px;
+    color: var(--ink-muted);
+  }
+
+  .callout {
+    background: var(--accent-wash);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    color: var(--ink);
+    max-width: 66ch;
+    margin: 0 0 14px;
+  }
+
+  .callout b { color: var(--accent-ink); }
+
+  .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-card);
+    padding: 22px 24px;
+    margin-top: 12px;
+  }
+
+  .contact-card .who {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .contact-card .who + div {
+    color: var(--ink-muted);
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  .contact-card a {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--accent-ink);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .contact-card a:hover { opacity: 0.8; }
+
+  footer.page-foot {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  a { color: var(--accent-ink); }
+
+  @media (max-width: 560px) {
+    .glance-row {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+    .glance-row .pill { justify-self: start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="eyebrow"><span class="mark">EX</span> EXSTREAM PRO — CG MANAGER</div>
+
+  <h1>Privacy Policy</h1>
+  <p class="subhead">What Ex CG Manager does with data on your machine, in plain terms — and, mostly, what it doesn't do with it at all.</p>
+
+  <div class="meta-row">
+    <span><b>Effective</b> September 5, 2026</span>
+    <span><b>Applies to</b> Exstream Pro – CG Manager, all versions (Revit 2024–2027)</span>
+    <span><b>Publisher</b> TEAM EX</span>
+  </div>
+
+  <p class="lede">Ex CG Manager is a Revit add-in that calculates and marks the center of gravity for selected elements. It runs entirely inside your local Revit session. The short version: it doesn't talk to the internet, doesn't collect analytics, and never sees your model data — everything below explains exactly what it does store, and where.</p>
+
+  <div class="glance">
+    <div class="glance-head">
+      <div class="label">At a glance</div>
+      <h2>Data handled by this add-in</h2>
+    </div>
+    <div class="glance-rows">
+      <div class="glance-row">
+        <div class="what">Your Revit model &amp; geometry</div>
+        <div class="pill">Never leaves Revit</div>
+        <div class="where">Read only to compute CG coordinates; written back only into your own project</div>
+      </div>
+      <div class="glance-row">
+        <div class="what">Usage analytics / telemetry</div>
+        <div class="pill">Not collected</div>
+        <div class="where">The add-in makes no network requests of any kind</div>
+      </div>
+      <div class="glance-row">
+        <div class="what">License email (Pro key)</div>
+        <div class="pill">Stored locally only</div>
+        <div class="where"><code>%AppData%\ExstreamPro\CGManager\license.key</code></div>
+      </div>
+      <div class="glance-row">
+        <div class="what">Trial start date</div>
+        <div class="pill">Stored locally only</div>
+        <div class="where">One local file + one registry value, both under your own Windows user account</div>
+      </div>
+      <div class="glance-row">
+        <div class="what">Exported CSV reports</div>
+        <div class="pill">Never sent to us</div>
+        <div class="where">Saved only to the folder you choose, via Windows' own Save dialog</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="doc-section">
+    <div class="sec-num">§1</div>
+    <h2 class="sec-title">What this add-in does</h2>
+    <p>Ex CG Manager adds one command to the Revit ribbon (<b>Ex CG Pro</b>). When you run it against selected elements, it computes their combined center of gravity, volume, and — where material density data is available — an estimated weight, then either places a marker family at that point, writes the results onto the selected elements' own parameters, or exports a CSV report. All of this computation happens inside the Revit process on your computer, using the Revit API.</p>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§2</div>
+    <h2 class="sec-title">Your models and project data</h2>
+    <p>The add-in reads geometry, material, and volume information only from the elements you actively select, and only for as long as it takes to run the calculation you asked for. Results are written back into your own Revit project — as parameter values on your elements, or as a marker family instance — and nowhere else.</p>
+    <div class="callout">We do not upload, transmit, cache, or retain any part of your Revit model, project file, or geometry. There is no server this add-in talks to.</div>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§3</div>
+    <h2 class="sec-title">Licensing data, stored locally</h2>
+    <p>Ex CG Manager offers a free 14-day trial and a paid Pro tier. To tell the two apart, it stores a small amount of data — entirely on your own machine, entirely offline:</p>
+    <ul>
+      <li><b>Pro license key</b> — if you activate Pro, the key you enter (which embeds the email address associated with your purchase) is saved to <code>%AppData%\ExstreamPro\CGManager\license.key</code> and verified using public-key cryptography, performed locally. It is never sent anywhere for validation.</li>
+      <li><b>Trial start date</b> — recorded once, in a small local file and a matching Windows registry value under <code>HKEY_CURRENT_USER\Software\ExstreamPro\CGManager</code>, so the 14-day count is accurate even if one copy is deleted.</li>
+    </ul>
+    <p class="muted">Neither of these ever leaves your computer. Uninstalling the add-in and deleting the files above removes them completely.</p>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§4</div>
+    <h2 class="sec-title">CSV export</h2>
+    <p>The Export CG Report feature writes a CSV file (Mark, ID, Material, Volume, Weight) to a location you choose yourself, using the standard Windows file save dialog. That file is yours from the moment it's created — we have no access to it and no visibility into where you save it or what you do with it afterward.</p>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§5</div>
+    <h2 class="sec-title">Third parties</h2>
+    <p>Ex CG Manager does not integrate any analytics SDK, crash reporter, advertising network, or other third-party service. Because no usage or personal data is collected beyond the license information described in §3, none is shared with or sold to anyone.</p>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§6</div>
+    <h2 class="sec-title">Children's privacy</h2>
+    <p class="muted">Ex CG Manager is a professional BIM tool distributed through the Autodesk App Store and is not directed at children. We do not knowingly collect information from anyone under the age of 16.</p>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§7</div>
+    <h2 class="sec-title">Changes to this policy</h2>
+    <p class="muted">If what this add-in stores or how it behaves ever changes, this page will be updated and the effective date above revised accordingly. Since the add-in has no update-check mechanism of its own, we'd recommend checking this page directly if you want the latest version.</p>
+  </section>
+
+  <section class="doc-section">
+    <div class="sec-num">§8</div>
+    <h2 class="sec-title">Contact</h2>
+    <div class="contact-card">
+      <div>
+        <div class="who">TEAM EX</div>
+        <div>Questions about this policy or the add-in</div>
+      </div>
+      <a href="mailto:teamex.bimsolutions@gmail.com">teamex.bimsolutions@gmail.com</a>
+    </div>
+  </section>
+
+  <footer class="page-foot">
+    <span>Exstream Pro — CG Manager</span>
+    <span>Privacy Policy · v1.0</span>
+  </footer>
+
+</div>
+</body>
+</html>
